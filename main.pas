@@ -1,4 +1,4 @@
-program main;
+program Main;
 
 var
 	randomNumber: Integer;
@@ -11,18 +11,18 @@ begin
 
 	while guess <> randomNumber do
 	begin
-		write('Guess: ');
-		readln(guess);
+		Write('Guess: ');
+		ReadLn(guess);
 		tries += 1;
 
 		if guess > randomNumber then
-			writeln('Lower');
+			WriteLn('Lower');
 
 		if guess < randomNumber then
-			writeln('Higher');
+			WriteLn('Higher');
 	end;
 
-	writeln;
-	writeln('You won!');
-	writeln('Took you ', tries, ' tries.');
+	WriteLn;
+	WriteLn('You won!');
+	WriteLn('Took you ', tries, ' tries.');
 end.
